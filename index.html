@@ -1,26 +1,26 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(to bottom, #c7f0ff, #ffffff);
+  background: #f0fbff;
 }
 
 header {
   background: linear-gradient(to right, #0284c7, #075985);
   color: white;
   text-align: center;
-  padding: 60px 20px;
+  padding: 50px 20px;
 }
 
 nav {
   background: #082f49;
-  padding: 15px;
+  padding: 14px;
   text-align: center;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  margin: 0 16px;
+  margin: 0 18px;
   font-weight: bold;
 }
 
@@ -29,68 +29,59 @@ nav a:hover {
 }
 
 .section {
-  max-width: 1100px;
+  max-width: 1000px;
   margin: auto;
   padding: 40px 20px;
 }
 
-.hero {
-  text-align: center;
-  padding: 70px 20px;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
-  gap: 25px;
-}
-
 .card {
   background: white;
-  padding: 22px;
-  border-radius: 14px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  text-align: center;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+  margin-bottom: 30px;
 }
 
-.card img {
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+  gap: 24px;
+}
+
+.product img {
   width: 100%;
-  height: 210px;
+  height: 220px;
   object-fit: cover;
   border-radius: 10px;
+  margin-top: 12px;
 }
 
 .price {
   font-size: 20px;
   font-weight: bold;
-  margin: 10px 0;
-}
-
-.tag {
-  background: #e0f2fe;
-  display: inline-block;
-  padding: 6px 10px;
-  border-radius: 20px;
-  font-size: 13px;
-  margin-bottom: 8px;
+  margin-top: 8px;
 }
 
 button {
-  padding: 12px 18px;
-  font-size: 16px;
-  border-radius: 8px;
-  border: none;
-  cursor: pointer;
   background: #0284c7;
   color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
 footer {
   background: #082f49;
   color: white;
   text-align: center;
-  padding: 30px;
-  margin-top: 40px;
+  padding: 25px;
 }
 <!DOCTYPE html>
 <html>
@@ -109,54 +100,39 @@ footer {
 
 <nav>
 <a href="index.html">Home</a>
-<a href="shop.html">Shop</a>
-<a href="about.html">About</a>
+<a href="products.html">Products</a>
 <a href="team.html">Team</a>
+<a href="about.html">About</a>
 <a href="mission.html">Mission</a>
-<a href="order.html">Order</a>
 <a href="contact.html">Contact</a>
 </nav>
 
-<section class="hero">
-<h2>Surf History in Your Pocket</h2>
-<p>Real surfboards we’ve ridden — turned into keychains.</p>
-<a href="shop.html"><button>Shop Collection</button></a>
-</section>
-
 <section class="section">
-<h2 style="text-align:center;">Featured Products</h2>
-
-<div class="grid">
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
-<div class="tag">Best Seller</div>
-<h3>Classic Shred Cut</h3>
-<p>Gloss fiberglass board slice</p>
-<div class="price">$8</div>
-</div>
+<h2>Surf History in Your Pocket</h2>
+<p>
+We turn real surfboards that have been ridden into custom keychains.
+Each keychain comes from an actual board and gets a second life instead of going to waste.
+</p>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98">
-<div class="tag">Color Rail</div>
-<h3>Rail Stripe Edition</h3>
-<p>Original board color stripe included</p>
-<div class="price">$10</div>
+<img src="images/process.jpg" alt="Cutting surfboard into keychains">
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1526481280691-3c469a9d5c9d">
-<div class="tag">Custom</div>
-<h3>Your Board Cut</h3>
-<p>Send your board — we cut it</p>
-<div class="price">$15</div>
+<h2>Why Shredhead</h2>
+<p>
+• Made from real boards  
+• Eco reuse focus  
+• Hand cut and finished  
+• Each piece is unique  
+</p>
 </div>
 
-</div>
 </section>
 
 <footer>
-Built from real surfboards • Eco reuse brand
+Shredhead Keychains — Built from real boards
 </footer>
 
 </body>
@@ -165,54 +141,103 @@ Built from real surfboards • Eco reuse brand
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Shop</title>
+<title>Products</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header><h1>Shop Keychains</h1></header>
+<header>
+<h1>Products</h1>
+</header>
 
 <nav>
 <a href="index.html">Home</a>
-<a href="shop.html">Shop</a>
+<a href="products.html">Products</a>
+<a href="team.html">Team</a>
 <a href="about.html">About</a>
-<a href="order.html">Order</a>
+<a href="mission.html">Mission</a>
 <a href="contact.html">Contact</a>
 </nav>
 
 <section class="section">
-<div class="grid">
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1502680390469-be75c86b636f">
-<h3>Mini Fish Shape</h3>
-<p>Retro board style cut</p>
-<div class="price">$9</div>
+<div class="product-grid">
+
+<div class="card product">
+<h3>Classic Board Cut</h3>
+<p>Standard fiberglass surfboard slice keychain.</p>
+<div class="price">$8</div>
+<img src="images/product1.jpg" alt="Classic surfboard keychain">
 <button>Order</button>
 </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1473116763249-2faaef81ccda">
-<h3>Performance Slice</h3>
-<p>Thin performance board piece</p>
-<div class="price">$11</div>
+<div class="card product">
+<h3>Rail Color Edition</h3>
+<p>Includes original board color stripe.</p>
+<div class="price">$10</div>
+<img src="images/product2.jpg" alt="Rail color keychain">
 <button>Order</button>
 </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
-<h3>Big Wave Glass</h3>
-<p>Heavy glass board section</p>
-<div class="price">$13</div>
+<div class="card product">
+<h3>Custom Your Board</h3>
+<p>Send your board — we cut your piece.</p>
+<div class="price">$15</div>
+<img src="images/product3.jpg" alt="Custom board keychain">
 <button>Order</button>
 </div>
 
 </div>
+
 </section>
 
 <footer>
-Bulk & custom orders available
+Bulk and custom orders available
+</footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Team</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Meet the Team</h1>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="team.html">Team</a>
+<a href="about.html">About</a>
+<a href="mission.html">Mission</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<section class="section">
+
+<div class="card">
+<h2>Our Crew</h2>
+<p>
+Founder — design and cutting  
+Materials — board sourcing  
+Finishing — sanding and sealing
+</p>
+
+<img src="images/team.jpg" alt="Shredhead team">
+</div>
+
+</section>
+
+<footer>
+Small crew • real craft
 </footer>
 
 </body>
@@ -226,24 +251,25 @@ Bulk & custom orders available
 </head>
 <body>
 
-<header><h1>About Shredhead</h1></header>
+<header><h1>About Us</h1></header>
 
 <nav>
 <a href="index.html">Home</a>
-<a href="shop.html">Shop</a>
+<a href="products.html">Products</a>
 <a href="team.html">Team</a>
-<a href="mission.html">Mission</a>
 </nav>
 
 <section class="section card">
 <p>
-Shredhead Keychains turns real surfboards we’ve ridden into custom keychains.
-Instead of throwing broken boards away, we reuse them and give them a second life.
-Each keychain comes from a real board with real wave history.
+Shredhead Keychains was started to reuse broken and retired surfboards.
+Instead of throwing boards away, we transform them into everyday carry items.
+Each piece keeps surf culture alive.
 </p>
 </section>
 
-<footer>Reuse • Ride • Respect</footer>
+<footer>
+Second life for every board
+</footer>
 
 </body>
 </html>
@@ -256,87 +282,23 @@ Each keychain comes from a real board with real wave history.
 </head>
 <body>
 
-<header><h1>Our Mission</h1></header>
+<header><h1>Mission Statement</h1></header>
 
 <nav>
 <a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="shop.html">Shop</a>
+<a href="products.html">Products</a>
 </nav>
 
 <section class="section card">
 <p>
-Our mission is to reduce waste and keep surf culture alive by transforming used
-surfboards into meaningful everyday items.
+Our mission is to reduce surfboard waste and create meaningful products from real boards.
+We combine sustainability, craftsmanship, and surf history.
 </p>
 </section>
 
-<footer>Every keychain caught a wave</footer>
-
-</body>
-</html>
-
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Team</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<header><h1>Meet the Team</h1></header>
-
-<nav>
-<a href="index.html">Home</a>
-<a href="shop.html">Shop</a>
-</nav>
-
-<section class="section grid">
-
-<div class="card">
-<h3>Founder</h3>
-<p>Design & cutting</p>
-</div>
-
-<div class="card">
-<h3>Board Sourcing</h3>
-<p>Collects retired boards</p>
-</div>
-
-<div class="card">
-<h3>Finishing</h3>
-<p>Sanding & sealing</p>
-</div>
-
-</section>
-
-<footer>Small crew • real craft</footer>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Order</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<header><h1>Order Custom Keychain</h1></header>
-
-<nav>
-<a href="index.html">Home</a>
-<a href="shop.html">Shop</a>
-</nav>
-
-<section class="section card">
-<p>Create a Google Form and paste your order link here:</p>
-<p><b>YOUR FORM LINK</b></p>
-</section>
-
-<footer>Custom board cuts available</footer>
+<footer>
+Reuse • Ride • Respect
+</footer>
 
 </body>
 </html>
@@ -353,17 +315,19 @@ surfboards into meaningful everyday items.
 
 <nav>
 <a href="index.html">Home</a>
-<a href="shop.html">Shop</a>
+<a href="products.html">Products</a>
+<a href="team.html">Team</a>
 </nav>
 
 <section class="section card">
 <p>Email: shredheadkeychains@email.com</p>
 <p>Instagram: @shredheadkeychains</p>
-<p>Buy at: school market + online orders</p>
+<p>Orders: school market + online form</p>
 </section>
 
-<footer>Ride the vibe</footer>
+<footer>
+Ride the vibe
+</footer>
 
 </body>
 </html>
-
